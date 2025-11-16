@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD Store - Professional CAD Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>CAD Store</h1>
+                <p>Professional CAD Projects</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" id="searchInput" placeholder="Search CAD projects...">
+                <button class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Professional CAD Projects</h2>
+                    <p>Discover high-quality CAD designs for CATIA, SolidWorks, and AutoCAD. From mechanical parts to complex assemblies.</p>
+                    <a href="#products" class="cta-btn nav-link">Browse Projects</a>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2>Software Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-software="catia">
+                        <div class="category-icon">🎯</div>
+                        <h3>CATIA</h3>
+                        <p>Advanced 3D modeling and design</p>
+                        <span class="project-count">15 projects</span>
+                    </div>
+                    <div class="category-card" data-software="solidworks">
+                        <div class="category-icon">🔧</div>
+                        <h3>SolidWorks</h3>
+                        <p>Professional mechanical design</p>
+                        <span class="project-count">8 projects</span>
+                    </div>
+                    <div class="category-card" data-software="autocad">
+                        <div class="category-icon">📐</div>
+                        <h3>AutoCAD</h3>
+                        <p>2D drafting and documentation</p>
+                        <span class="project-count">Coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>CAD Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="catia">CATIA</button>
+                    <button class="filter-btn" data-filter="solidworks">SolidWorks</button>
+                    <button class="filter-btn" data-filter="autocad">AutoCAD</button>
+                </div>
+                <div class="product-grid" id="productGrid">
+                    <!-- CATIA Projects -->
+                    <div class="product-card" data-software="catia" data-price="29.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=CATIA+GTA+50" alt="GTA 50">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/GTA 50.CATPart">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>GTA 50</h3>
+                            <p class="software-tag">CATIA</p>
+                            <p class="price">$29.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="catia" data-price="34.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=CATIA+GTA+80" alt="GTA 80">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/GTA 80.CATPart">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>GTA 80</h3>
+                            <p class="software-tag">CATIA</p>
+                            <p class="price">$34.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="catia" data-price="39.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=CATIA+GTX+80" alt="GTX 80">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/GTX 80.CATPart">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>GTX 80</h3>
+                            <p class="software-tag">CATIA</p>
+                            <p class="price">$39.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="catia" data-price="24.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=CATIA+Mould+900" alt="Mould 900">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/moules 900-1000-12000.CATPart">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mould Assembly</h3>
+                            <p class="software-tag">CATIA</p>
+                            <p class="price">$24.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- SolidWorks Projects -->
+                    <div class="product-card" data-software="solidworks" data-price="19.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=SolidWorks+Part1" alt="Part1">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/solidworks/Part1.SLDPRT">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mechanical Part 1</h3>
+                            <p class="software-tag">SolidWorks</p>
+                            <p class="price">$19.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="solidworks" data-price="22.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=SolidWorks+Part2" alt="Part2">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/solidworks/Part2.SLDPRT">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mechanical Part 2</h3>
+                            <p class="software-tag">SolidWorks</p>
+                            <p class="price">$22.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="solidworks" data-price="27.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=SolidWorks+Assembly" alt="Assembly">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/solidworks/Pièce1.SLDPRT">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Assembly Component</h3>
+                            <p class="software-tag">SolidWorks</p>
+                            <p class="price">$27.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-software="solidworks" data-price="31.99">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x200?text=SolidWorks+Complex+Part" alt="Complex Part">
+                            <div class="product-overlay">
+                                <button class="preview-btn" data-file="CAD/catia/solidworks/chabka.SLDPRT">Preview</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Complex Mechanical Part</h3>
+                            <p class="software-tag">SolidWorks</p>
+                            <p class="price">$31.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About CAD Store</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>We provide high-quality CAD projects for professionals and students. Our collection includes detailed designs created with industry-standard software including CATIA, SolidWorks, and AutoCAD.</p>
+                        <p>Each project comes with complete documentation and is ready for manufacturing or further customization.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>23+</h3>
+                            <p>CAD Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Software Types</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Quality Assured</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CAD Store</h3>
+                    <p>Your trusted source for professional CAD projects.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#categories" class="nav-link">Categories</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@cadstore.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CAD Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Preview Modal -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>CAD File Preview</h2>
+            <div class="file-info">
+                <p><strong>File:</strong> <span id="previewFileName"></span></p>
+                <p><strong>Software:</strong> <span id="previewSoftware"></span></p>
+                <p><strong>Price:</strong> <span id="previewPrice"></span></p>
+            </div>
+            <div class="preview-content">
+                <div class="cad-preview">
+                    <div class="cad-placeholder">
+                        <div class="cad-icon">📐</div>
+                        <p>CAD file preview not available in browser</p>
+                        <p>This file requires specialized CAD software to view</p>
+                        <p class="file-path">Path: <span id="filePath"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="download-btn">Download CAD File</button>
+                <button class="add-to-cart-modal">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
